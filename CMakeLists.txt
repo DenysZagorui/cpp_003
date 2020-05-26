@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.5)
 
 project (app)
 
-add_compile_definitions(USE_STRING_FUNC)
+add_definitions(-DUSE_STRING_FUNC)
 
 add_library(make_double ${PROJECT_SOURCE_DIR}/make_double)
 add_library(print_string SHARED ${PROJECT_SOURCE_DIR}/print_string.cpp)
